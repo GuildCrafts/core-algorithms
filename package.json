@@ -2,12 +2,22 @@
   "name": "core-algorithms",
   "description": "Tests and implementations for algorithms commonly used in job interviews.",
   "private": false,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helenyau0/core-algorithms.git"
+  },
+  "author": "Helen, Aaron",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helenyau0/core-algorithms"
+  },
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-preset-env": "^1.1.4",
     "babel-register": "^6.18.0",
     "chai": "~1.8.0",
+    "expect": "^1.20.2",
     "mocha": "2.0.1"
   },
   "scripts": {
