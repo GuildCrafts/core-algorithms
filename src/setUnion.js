@@ -4,13 +4,12 @@ export default function setUnion(a, b) {
 var union = [];
 var newArr = a.concat(b);
   for(var i = 0; i < newArr.length; i++){
-    console.log('new', newArr );
+
     if(union.indexOf(newArr[i]) === -1){
 
       union.push(newArr[i])
     }
   }
-  console.log('union',union );
     return union
 }
 
