@@ -1,4 +1,4 @@
-let binarySearch = (arraySort, numberSearch) => {
+export default function binarySearch(arraySort, numberSearch) {
   let min = 0;
   let max = arraySort.length-1;
 
@@ -14,8 +14,3 @@ let binarySearch = (arraySort, numberSearch) => {
   }
   return -1;
 }
-console.log('binarySearch',binarySearch([1,4,5,6,9,29], 29) );
-console.log('----------')
-console.log('binarySearch',binarySearch([1,4,5,6,9,29], 6) );
-console.log('----------')
-console.log('binarySearch',binarySearch([1,4,5,6,9,29], 4) );
