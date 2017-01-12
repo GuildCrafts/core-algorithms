@@ -22,12 +22,9 @@ class Graph {
     const startingNode = allNodes[0]
     let visitedNodes = [startingNode]
     let queue = Array.from(graph[startingNode])
-    console.log('allNodes', allNodes)
-    console.log('queue', queue)
+
     while(queue.length != 0) {
-      console.log('queue:', queue)
       let nodeToVisit = queue.shift()
-      console.log('nodeToVisit', nodeToVisit);
       let nodeNeighbors = graph[nodeToVisit]
       visitedNodes.push(nodeToVisit)
       nodeNeighbors.forEach(node => {
@@ -36,13 +33,14 @@ class Graph {
         }
       })
     }
-    console.log('visitedNodes', visitedNodes)
-length
+    length
     return allNodes.reduce((isConnected, node) => {
       return isConnected && (visitedNodes.indexOf(node) >= 0)
     }, true)
   }
 }
+
+'a': ['b', 'c', 'd']
 
 let g = new Graph()
 g.add('a', 'b')
@@ -50,9 +48,3 @@ g.add('a', 'c')
 g.add('a', 'e')
 g.add('f', 'g')
 g.doBFS()
-
-
-
-// g.add('b', 'd')
-// g.add('c', 'a')
-// g.add('c', 'd')
