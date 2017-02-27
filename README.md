@@ -55,7 +55,7 @@ Classic
   isPalindrome('A man, a plan, a canal: Panama')
   // => true
 
-Numeric
+##Numeric
 
 #factorial
 
@@ -72,119 +72,123 @@ Numeric
 
 #collatzConjecture
 
-Return the Collatz sequence for a given number.
+  Return the Collatz sequence for a given number.
 
-The Collatz sequence for any positive integer n is defined as follows:
+  The Collatz sequence for any positive integer n is defined as follows:
 
-If n is even, divide it by 2 to get n / 2. If n is odd, multiply it by 3 and add 1 to obtain 3n + 1. Repeat the process until you reach 1.
-collatzConjecture(1)
-// => [1]
+  If n is even, divide it by 2 to get n / 2. If n is odd, multiply it by 3 and add 1 to obtain 3n + 1. Repeat the process until you reach 1.
+  collatzConjecture(1)
+  // => [1]
 
-collatzConjecture(7)
-// => [7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1]
+  collatzConjecture(7)
+  // => [7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1]
 
-#Set Operations
+##Set Operations
 
-setUnion
+#setUnion
 
-Return the union of two sets.
+  Return the union of two sets.
 
-const a = [1, 2, 3, 4]
-const b = [2, 4, 6, 8]
-setUnion(a, b)
-// => [1, 2, 3, 4, 6, 8]
-setIntersection
+  const a = [1, 2, 3, 4]
+  const b = [2, 4, 6, 8]
+  setUnion(a, b)
+  // => [1, 2, 3, 4, 6, 8]
 
-Return the intersection of two sets.
+#setIntersection
 
-const a = [1, 2, 3, 4]
-const b = [2, 4, 6, 8]
-setIntersection(a, b)
-// => [2, 4]
-setCompliment
+  Return the intersection of two sets.
 
-Return the compliment of two sets.
+  const a = [1, 2, 3, 4]
+  const b = [2, 4, 6, 8]
+  setIntersection(a, b)
+  // => [2, 4]
 
-const a = [1, 2, 3, 4]
-const b = [2, 4, 6, 8]
-setCompliment(a, b)
-// => [6, 8]
-setSymmetricDifference
+#setCompliment
 
-Return the symmetric difference of two sets.
+  Return the compliment of two sets.
 
-const a = [1, 2, 3, 4]
-const b = [2, 4, 6, 8]
-setSymmetricDifference(a, b)
-// => [1, 3, 6, 8]
+  const a = [1, 2, 3, 4]
+  const b = [2, 4, 6, 8]
+  setCompliment(a, b)
+  // => [6, 8]
 
-#Sorting and Searching
+#setSymmetricDifference
+
+  Return the symmetric difference of two sets.
+
+  const a = [1, 2, 3, 4]
+  const b = [2, 4, 6, 8]
+  setSymmetricDifference(a, b)
+  // => [1, 3, 6, 8]
+
+##Sorting and Searching
 
 #mergeSort
 
-Sort an array of numbers using the merge sort algorithm.
+  Sort an array of numbers using the merge sort algorithm.
 
-mergeSort([10, 2, 7, 5, 8, 3, 6, 1, 4, 9])
-// => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  mergeSort([10, 2, 7, 5, 8, 3, 6, 1, 4, 9])
+  // => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 #bubbleSort
 
-Sort an array of numbers using the bubble sort algorithm.
+  Sort an array of numbers using the bubble sort algorithm.
 
-bubbleSort([10, 2, 7, 5, 8, 3, 6, 1, 4, 9])
-// => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  bubbleSort([10, 2, 7, 5, 8, 3, 6, 1, 4, 9])
+  // => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 #binarySearch
 
-Search for a number within an array using the binary search algorithm.
+  Search for a number within an array using the binary search algorithm.
 
-const numbers = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
-binarySearch(numbers, 45)
-// => 8
-Graphing and Geometry
+  const numbers = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+  binarySearch(numbers, 45)
+  // => 8
+  Graphing and Geometry
 
-closestPair
+#closestPair
 
-Given a set of points on a 2-dimensional plane, return the pair of points with the least distance between them.
+  Given a set of points on a 2-dimensional plane, return the pair of points with the least distance between them.
 
-Reference: Wikipedia
+  Reference: Wikipedia
 
-const points = [
-  [2,1],
-  [4,0],
-  [-1,0],
-  [5,3],
-  [-2,5],
-  [3,-3],
-  [-2,0],
-  [3,4],
-  [5,-4],
-  [0,-2]
-]
-closestPair(points)
-// => { pair: [[-1, 0], [-2, 0]], distance: 1 }
-isConnectedGraph
+  const points = [
+    [2,1],
+    [4,0],
+    [-1,0],
+    [5,3],
+    [-2,5],
+    [3,-3],
+    [-2,0],
+    [3,4],
+    [5,-4],
+    [0,-2]
+  ]
+  closestPair(points)
+  // => { pair: [[-1, 0], [-2, 0]], distance: 1 }
 
-Check if a graph is connected or disconnected. Return true or false.
+#isConnectedGraph
 
-A graph is connected when there is a path between every pair of vertices.
+  Check if a graph is connected or disconnected. Return true or false.
 
-Reference: Wikipedia
+  A graph is connected when there is a path between every pair of vertices.
 
-const graphA = {
-  'a': ['b', 'c'],
-  'b': ['a', 'd'],
-  'c': ['a', 'd'],
-  'd': ['b', 'c'],
-}
-isConnectedGraph(graphA)
-// => true
+  Reference: Wikipedia
 
-const graphB = {
-  'a': ['b'],
-  'b': ['a'],
-  'c': ['d'],
-  'd': ['c'],
-}
-isConnectedGraph(graphB)
-// => false
+  const graphA = {
+    'a': ['b', 'c'],
+    'b': ['a', 'd'],
+    'c': ['a', 'd'],
+    'd': ['b', 'c'],
+  }
+  isConnectedGraph(graphA)
+  // => true
+
+  const graphB = {
+    'a': ['b'],
+    'b': ['a'],
+    'c': ['d'],
+    'd': ['c'],
+  }
+  isConnectedGraph(graphB)
+  // => false
