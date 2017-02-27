@@ -5,8 +5,8 @@ let keys = {
   pennies: 0
 }
 let takeQuarter = function(amounTGiven, pricey){
-    amounTGiven = amounTGiven - 25
-    keys.quarters++
+  amounTGiven = amounTGiven - 25
+  keys.quarters++
   return amounTGiven
 }
 let takeDime = function(amounTGiven, pricey){
@@ -29,6 +29,7 @@ export default function makeChange({price, amountGiven}) {
   let results = {}
   let amounTGiven = amountGiven
   if(price === amountGiven) {
+    
     results.quarters = keys.quarters
     results.dimes = keys.dimes
     results.nickels = keys.nickels
@@ -40,7 +41,6 @@ export default function makeChange({price, amountGiven}) {
     keys.pennies = 0
     return results
   }
-  console.log('new post!!',price, amountGiven);
   if(amounTGiven - pricey >= 25){
     amounTGiven = takeQuarter(amounTGiven, keys)
     return makeChange({price: price, amountGiven: amounTGiven})
