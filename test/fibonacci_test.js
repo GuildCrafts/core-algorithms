@@ -3,7 +3,7 @@ import fibonacci from '../src/fibonacci'
 
 describe('fibonacci()', function(){
 
-  it.only('should be a function', function(){
+  it('should be a function', function(){
     expect(fibonacci).to.be.a('function')
   })
 
