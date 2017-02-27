@@ -28,7 +28,7 @@ describe('makeChange()', function(){
     })
   })
 
-  it.only('minimizes the number of coins given by using the most high-value coins', function(){
+  it('minimizes the number of coins given by using the most high-value coins', function(){
     expect(makeChange({price: 100, amountGiven: 168})).to.deep.equal({
       quarters: 2,
       dimes: 1,

@@ -29,7 +29,7 @@ export default function makeChange({price, amountGiven}) {
   let results = {}
   let amounTGiven = amountGiven
   if(price === amountGiven) {
-    
+
     results.quarters = keys.quarters
     results.dimes = keys.dimes
     results.nickels = keys.nickels
@@ -55,7 +55,7 @@ export default function makeChange({price, amountGiven}) {
       }else{
         if(amounTGiven - pricey >= 1){
           amounTGiven = takePenny(amounTGiven, pricey)
-          return makeChange({price: price, amountGiven: mounTGiven})
+          return makeChange({price: price, amountGiven: amounTGiven})
         }
       }
     }

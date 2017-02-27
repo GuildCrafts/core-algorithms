@@ -63,7 +63,8 @@ Classic
 
   factorial(5)
   // => 120
-  fibonacci
+
+#fibonacci
 
   Return an array of Fibonacci numbers to the nth position.
 
