@@ -27,7 +27,6 @@ const takePenny = function(amountGiven, price){
 export default function makeChange({price, amountGiven}) {
   let results = {}
   if(price === amountGiven) {
-
     results.quarters = coins.quarters
     results.dimes = coins.dimes
     results.nickels = coins.nickels
