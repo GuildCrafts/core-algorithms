@@ -4,13 +4,29 @@ Tests and implementations for algorithms commonly used in job interviews. See th
 
 Base repository for the [Core Algorithms](https://github.com/GuildCrafts/web-development-js/issues/123) goal.
 
-## Installation and Setup
+#Well formatted code
 
-_Fill this out_
+ Code uses a linter, which can be invoked with a command (e.g. npm run lint).
+ Running the linter on all source code files generates no linting errors.
+#Clear and readable code
 
-## Usage and Examples
+ Variables, functions, css classes, etc. are meaningfully named (no comments exist in code to explain functionality - the names serve that function)
+#Clear and useful README
 
-_...and this_
+ Repository includes a README file with installation and setup instructions.
+#Proper dependency management
+
+ There is a command to install dependencies (e.g. npm install) and it is specified in the installation and setup instructions of the README.
+#Good project management
+
+ Commit messages are concise and descriptive.
+ Each commit has a specific scope, and does not include unrelated code.
+ All features are added via pull requests.
+ Every pull request has a description summarizing the changes made.
+ Every pull request has been reviewed with Prrr.
+#Testing
+
+ Code is sufficiently covered with a unit test suite
 
 Classic
 
@@ -63,8 +79,7 @@ Classic
 
   factorial(5)
   // => 120
-
-#fibonacci
+  fibonacci
 
   Return an array of Fibonacci numbers to the nth position.
 
