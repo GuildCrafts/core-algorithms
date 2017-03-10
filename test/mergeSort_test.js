@@ -4,7 +4,7 @@ import mergeSort from '../src/mergeSort';
 describe('mergeSort()', () => {
 
   it('should be a function', () => {
-    expect(mergeSort).to.be.a('function');    
+    expect(mergeSort).to.be.a('function');
   })
 
   it('should sort properly', () => {
@@ -13,6 +13,3 @@ describe('mergeSort()', () => {
   })
 
 })
-
-
-// /git commit -m "Finished algorithm problems; makeChange, FizzBuzz, isPalindrome, factorial, fibonacci, collatzConjecture, setUnion, setIntersection, setCompliment, setSymmetricDifference"

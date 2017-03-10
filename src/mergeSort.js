@@ -1,5 +1,5 @@
 export default function mergeSort(array){
-  //code here
+
    let n = array.length;
   if (n < 2) return;
 
@@ -9,8 +9,6 @@ export default function mergeSort(array){
   mergeSort(left);
   mergeSort(right);
 
-  //this portion of the code combines the granulated array
-  // from above
   let i = 0;
   let j = 0;
   let a = 0;

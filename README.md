@@ -6,8 +6,8 @@ Base repository for the [Core Algorithms](https://github.com/GuildCrafts/web-dev
 
 ## Installation and Setup
 
-_Fill this out_
+Cloned GitHub repository, ran npm install, gave warnings "No repository set" and "No license file", unsure of warning since repository has been set and license file exists.
 
 ## Usage and Examples
 
-_...and this_
+Finished implementing algorithm problems; makeChange, FizzBuzz, isPalindrome, factorial, fibonacci, collatzConjecture, setUnion, setIntersection, setCompliment, setSymmetricDifference, and mergeSort. 

@@ -1,5 +1,4 @@
 export default function fizzBuzz() {
-  //code here
 
   let count = 1;
   let array100 = [];

@@ -1,5 +1,5 @@
 export default function makeChange({price, amountGiven}) {
-  // your code here
+
   let exactChange = {
     quarters: 0,
     dimes: 0,

@@ -1,5 +1,5 @@
 export default function setIntersection(a, b) {
-  //code here
+
   let unique = Array.from(new Set(a));
   let intersection = [];
 

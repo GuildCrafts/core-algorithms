@@ -1,5 +1,5 @@
 export default function setUnion(a, b) {
-  //code here
+
   if (!Array.isArray(a)) throw new Error('error');
   if (!Array.isArray(b)) throw new Error('error');
 
