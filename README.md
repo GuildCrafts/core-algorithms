@@ -10,4 +10,6 @@ Cloned GitHub repository, ran npm install, gave warnings "No repository set" and
 
 ## Usage and Examples
 
-Finished implementing algorithm problems; makeChange, FizzBuzz, isPalindrome, factorial, fibonacci, collatzConjecture, setUnion, setIntersection, setCompliment, setSymmetricDifference, and mergeSort. 
+Finished implementing algorithm problems; makeChange, FizzBuzz, isPalindrome, factorial, fibonacci, collatzConjecture, setUnion, setIntersection, setCompliment, setSymmetricDifference, and mergeSort.
+
+Finished implementing remaining algorithm problems: bubbleSort, binarySearch, closestPair, isConnectedGraph. 
