@@ -1,6 +1,6 @@
 export default function fizzBuzz(value) {
   const returnArray = []
-  for (let i = 1;  i <= value; i++) {
+  for (let index = 1;  index <= value; index++) {
     let fizzBuzzyValue = ''
 
     if(i % 3 === 0) {
@@ -10,7 +10,7 @@ export default function fizzBuzz(value) {
       fizzBuzzyValue = fizzBuzzyValue.concat('Buzz')
     }
     if(fizzBuzzyValue === '') {
-      fizzBuzzyValue = i
+      fizzBuzzyValue = index
     }
     returnArray.push(fizzBuzzyValue)
   }
