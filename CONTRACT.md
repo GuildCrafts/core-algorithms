@@ -24,9 +24,9 @@ Complete **ONLY** the [Classic](https://github.com/GuildCrafts/core-algorithms/b
 
 ## Specifications
 
-- [ ] Artifact produced is a fork of the [core-algorithms][core-algorithms] repo.
+- [x] Artifact produced is a fork of the [core-algorithms][core-algorithms] repo.
 - [ ] Can run all tests with `npm test`.
-- [ ] `makeChange()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
+- [x] `makeChange()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
 - [ ] Tests for `makeChange()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
 - [ ] `fizzBuzz()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
 - [ ] Tests for `fizzBuzz()` exist.
