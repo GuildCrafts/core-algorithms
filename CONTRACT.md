@@ -34,8 +34,8 @@ Complete **ONLY** the [Classic](https://github.com/GuildCrafts/core-algorithms/b
 - [x] Tests for `isPalindrome()` exist with at least 2 unit tests using valid inputs.
 - [x] `factorial()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
 - [x] Tests for `factorial()` exist with at least 2 unit tests using valid inputs.
-- [ ] `fibonacci()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
-- [ ] Tests for `fibonacci()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
+- [x] `fibonacci()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
+- [x] Tests for `fibonacci()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
 - [ ] `collatzConjecture()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
 - [ ] Tests for `collatzConjecture()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
 - [ ] `setUnion()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
