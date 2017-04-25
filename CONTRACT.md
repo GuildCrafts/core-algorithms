@@ -38,8 +38,8 @@ Complete **ONLY** the [Classic](https://github.com/GuildCrafts/core-algorithms/b
 - [x] Tests for `fibonacci()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
 - [x] `collatzConjecture()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
 - [x] Tests for `collatzConjecture()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
-- [ ] `setUnion()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
-- [ ] Tests for `setUnion()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
+- [x] `setUnion()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
+- [x] Tests for `setUnion()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
 - [ ] `setIntersection()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
 - [ ] Tests for `setIntersection()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
 - [ ] `setComplement()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
