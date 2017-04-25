@@ -9,7 +9,7 @@ describe('setUnion', function(){
 
   it('returns the union of two sets', function() {
     expect(setUnion([1,2,3,4],[2,4,6,8])).to.eql([1, 2, 3, 4, 6, 8])
-    expect(setUnion([2,3,4,4], [1,2,3,4]).to.eqal([1,2,3,4])
+    expect(setUnion([2,3,4,4],[1,2,3,4])).to.eql([1,2,3,4])
   })
 
   it('throws an error when given invalid inputs', function() {
