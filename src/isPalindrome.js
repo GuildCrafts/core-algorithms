@@ -15,8 +15,8 @@
 
 export default function isPalindrome(string) {
   var strToLowerCase = string.toLowerCase()
-  var strWithoutSpecialCharAndSpaces = strToLowerCase.replace(/[^a-zA-Z]/g, "")
-  var isPalindromeArray = strWithoutSpecialCharAndSpaces.split('')
+  var cleanStr = strToLowerCase.replace(/[^a-zA-Z]/g, "")
+  var isPalindromeArray = cleanStr.split('')
 
   var shiftArray = []
   var popArray = []

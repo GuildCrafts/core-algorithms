@@ -16,7 +16,7 @@
 
 export default function makeChange(options) {
   if (typeof options !== 'object') {
-    throw new Error('Invalid input format. Expected an object literal')
+    throw new Error('Invalid input format. Expected an object')
   }
   const {price, amountGiven} = options
   let change = {

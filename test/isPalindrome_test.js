@@ -14,5 +14,4 @@ describe('isPalindrome', function() {
   it('returns false if it is not a palindrome', function() {
     expect(isPalindrome('bananas')).to.eql(false)
   })
-
 })
