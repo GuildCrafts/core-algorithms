@@ -50,4 +50,16 @@ describe('makeChange()', function(){
       pennies: 0,
     })
   })
+
+  it('throws an error when given invalid inputs', function() {
+    expect(function(){ makeChange(100, 170) }).to.throw(
+      'Invalid input format. Expected an object literal'
+    )
+  })
+
+  it('throws an error when given no arguments', function() {
+    expect(function(){ makeChange() }).to.throw(
+      'Invalid input format. Expected an object literal'
+    )
+  })
 })

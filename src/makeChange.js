@@ -14,14 +14,18 @@
 // // => { quarters: 2, dimes: 1, nickels: 1, pennies: 3 }
 
 
-export default function makeChange({price, amountGiven}) {
-  var change = {
+export default function makeChange(options) {
+  if (typeof options !== 'object') {
+    throw new Error('Invalid input format. Expected an object literal')
+  }
+  const {price, amountGiven} = options
+  let change = {
     quarters: 0,
     dimes: 0,
     nickels: 0,
     pennies: 0,
   }
-  var result = amountGiven - price
+  let result = amountGiven - price
 
   if (result === 0) {
     return change
@@ -42,5 +46,5 @@ export default function makeChange({price, amountGiven}) {
     result = result - 1
     change.pennies += 1
   }
-    return change
+  return change
 }
