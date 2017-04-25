@@ -30,8 +30,8 @@ Complete **ONLY** the [Classic](https://github.com/GuildCrafts/core-algorithms/b
 - [x] Tests for `makeChange()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
 - [x] `fizzBuzz()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
 - [x] Tests for `fizzBuzz()` exist.
-- [ ] `isPalindrome()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
-- [ ] Tests for `isPalindrome()` exist with at least 2 unit tests using valid inputs.
+- [x] `isPalindrome()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
+- [x] Tests for `isPalindrome()` exist with at least 2 unit tests using valid inputs.
 - [ ] `factorial()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
 - [ ] Tests for `factorial()` exist with at least 2 unit tests using valid inputs.
 - [ ] `fibonacci()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].

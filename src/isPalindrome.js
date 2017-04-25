@@ -25,16 +25,12 @@ export default function isPalindrome(string) {
     shiftArray.push(isPalindromeArray.shift([i]))
     popArray.push(isPalindromeArray.pop([i]))
   }
-  console.log('shift', shiftArray)
-  console.log('pop', popArray)
-  //check if both arrays match
-  //return boolean
+  var shiftString = shiftArray.join('')
+  var popString = popArray.join('')
+
+  if (shiftString == popString) {
+    return true
+  } else {
+    return false
+  }
 }
-
-
-//regex to remove special characters and spaces
-//2 empty arrays
-//split string at characters
-//shift from beginning of string into 1st array
-//pop from end of string into 2nd array
-//check if both arrays match
