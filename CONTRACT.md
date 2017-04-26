@@ -38,21 +38,21 @@ Complete **ONLY** the [Classic](https://github.com/GuildCrafts/core-algorithms/b
 - [x] Tests for `fibonacci()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
 - [x] `collatzConjecture()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
 - [x] Tests for `collatzConjecture()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
-- [ ] `setUnion()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
-- [ ] Tests for `setUnion()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
-- [ ] `setIntersection()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
-- [ ] Tests for `setIntersection()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
-- [ ] `setComplement()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
-- [ ] Tests for `setComplement()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
-- [ ] `setSymmetricDifference()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
-- [ ] Tests for `setSymmetricDifference()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
+- [x] `setUnion()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
+- [x] Tests for `setUnion()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
+- [x] `setIntersection()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
+- [x] Tests for `setIntersection()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
+- [x] `setComplement()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
+- [x] Tests for `setComplement()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
+- [x] `setSymmetricDifference()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
+- [x] Tests for `setSymmetricDifference()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
 - [ ] Repository includes a README file with basic installation and setup instructions.
-- [ ] All dependencies are properly declared in `package.json`.
-- [ ] All major features are added via pull requests with a clear description and concise commit messages.
+- [x] All dependencies are properly declared in `package.json`.
+- [x] All major features are added via pull requests with a clear description and concise commit messages.
 - [ ] Code uses a linter and there are no linting errors.
-- [ ] Variables, functions, files, etc. have appropriate and meaningful names.
+- [x] Variables, functions, files, etc. have appropriate and meaningful names.
 - [ ] Functions are small and serve a single purpose.
-- [ ] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
+- [x] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
 
 ### Stretch
 
