@@ -6,12 +6,12 @@
 // // => 120
 
 export default function factorial(num) {
-    var accumulator = num
-    for (var i = num; i > 1; i--) {
+  var accumulator = num
+  for (var i = num; i > 1; i--) {
     accumulator = accumulator * (i - 1)
-    }
-    return accumulator
   }
+  return accumulator
+}
 
 //Other way:
 //   var factorialElements = [num]

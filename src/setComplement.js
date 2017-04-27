@@ -19,4 +19,4 @@ export default function setComplement(setA, setB) {
     }
   }
   return complementArray
- }
+}

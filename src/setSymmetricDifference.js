@@ -13,7 +13,7 @@ export default function setSymmetricDifference(setA, setB) {
     throw new Error('Invalid input format. Expected two arrays')
   }
   let complementArray = []
-  
+
   for(let element of setB) {
     if(!setA.includes(element)) {
       complementArray.push(element)
@@ -25,6 +25,6 @@ export default function setSymmetricDifference(setA, setB) {
     }
   }
   return complementArray.sort()
-  }
+}
 
 //
