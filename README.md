@@ -11,14 +11,13 @@ Base repository for the [Core Algorithms](http://jsdev.learnersguild.org/goals/1
 
 ## Installation and Setup
 
-
-
 Use the "npm i" command to install your dependencies.
 
 Use the "npm run test" command to run your tests in the terminal.
 
 Use the "npm install --save-dev eslint" command to install the linter ESlint.
-Run the "eslint --init" command to configure ESlint.
+  Use the "eslint --init" command to configure ESlint.
+  Use the "eslint [filename or folder name]" command to lint through your files.  
 
 ## Usage and Examples
 

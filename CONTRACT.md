@@ -49,9 +49,9 @@ Complete **ONLY** the [Classic](https://github.com/GuildCrafts/core-algorithms/b
 - [ ] Repository includes a README file with basic installation and setup instructions.
 - [x] All dependencies are properly declared in `package.json`.
 - [x] All major features are added via pull requests with a clear description and concise commit messages.
-- [ ] Code uses a linter and there are no linting errors.
+- [x] Code uses a linter and there are no linting errors.
 - [x] Variables, functions, files, etc. have appropriate and meaningful names.
-- [ ] Functions are small and serve a single purpose.
+- [x] Functions are small and serve a single purpose.
 - [x] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
 
 ### Stretch
