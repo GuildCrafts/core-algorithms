@@ -10,6 +10,7 @@ describe('setIntersection', function(){
   it('returns the intersection of two sets', function () {
     expect(setIntersection([1, 2, 3, 4],[2, 4, 6, 8])).to.eql([2,4])
     expect(setIntersection([82,90,1], [1, 2, 90])).to.eql([1,90])
+    expect(setIntersection([1,1,2,3,4], [2,4,6,8])).to.eql([2,4])
   })
 
   it('throws an error when given invalid inputs', function() {
