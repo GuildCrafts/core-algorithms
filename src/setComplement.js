@@ -8,7 +8,7 @@
 // // => [6, 8]
 
 
-export default function setComplement(setA, setB) {
+let setComplement = (setA, setB) => {
   if ( !Array.isArray(setA) || !Array.isArray(setB) ) {
     throw new Error('Invalid input format. Expected two arrays')
   }
@@ -19,4 +19,6 @@ export default function setComplement(setA, setB) {
     }
   }
   return complementArray
- }
+}
+
+module.exports = { setComplement }

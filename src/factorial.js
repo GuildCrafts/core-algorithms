@@ -5,13 +5,15 @@
 // factorial(5)
 // // => 120
 
-export default function factorial(num) {
-    var accumulator = num
-    for (var i = num; i > 1; i--) {
+let factorial = num => {
+  let accumulator = num
+  for (let i = num; i > 1; i--) {
     accumulator = accumulator * (i - 1)
-    }
-    return accumulator
   }
+  return accumulator
+}
+
+module.exports = { factorial }
 
 //Other way:
 //   var factorialElements = [num]

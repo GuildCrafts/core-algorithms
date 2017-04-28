@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import fibonacci from '../src/fibonacci'
+import { fibonacci } from '../src/fibonacci'
 
 describe ('fibonacci', function(){
 

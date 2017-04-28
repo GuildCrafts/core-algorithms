@@ -12,7 +12,7 @@
 // // => [7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1]
 
 
-export default function collatzConjecture(num) {
+let collatzConjecture = num => {
   if (!Number.isInteger(num) || num < 0) {
     throw new Error('Invalid input format. Expected a positive integer')
   }
@@ -30,3 +30,5 @@ export default function collatzConjecture(num) {
   }
   return collatzArr
 }
+
+module.exports = { collatzConjecture }

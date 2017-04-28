@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import setUnion from '../src/setUnion'
+import { setUnion } from '../src/setUnion'
 
 describe('setUnion', function(){
 

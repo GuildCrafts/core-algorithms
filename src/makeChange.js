@@ -14,7 +14,7 @@
 // // => { quarters: 2, dimes: 1, nickels: 1, pennies: 3 }
 
 
-export default function makeChange(options) {
+let makeChange = options => {
   if (typeof options !== 'object') {
     throw new Error('Invalid input format. Expected an object')
   }
@@ -48,3 +48,5 @@ export default function makeChange(options) {
   }
   return change
 }
+
+module.exports = { makeChange }

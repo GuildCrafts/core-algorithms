@@ -7,7 +7,7 @@
 // setUnion(a, b)
 // // => [1, 2, 3, 4, 6, 8]
 
-export default function setUnion(a, b){
+let setUnion = (a, b) => {
   if (!Array.isArray(a) || !Array.isArray(b)){
     throw new Error('Invalid input format. Expected two arrays')
   }
@@ -20,3 +20,5 @@ export default function setUnion(a, b){
   let filteredArr = sortedArr.filter(isUnique)
   return filteredArr
 }
+
+module.exports = { setUnion }

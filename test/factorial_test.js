@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import factorial from '../src/factorial'
+import { factorial } from '../src/factorial'
 
 describe('factorial()', function(){
 
