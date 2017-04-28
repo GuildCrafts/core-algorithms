@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import setComplement from '../src/setComplement'
+import { setComplement } from '../src/setComplement'
 
 describe('setComplement', function(){
 

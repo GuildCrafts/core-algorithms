@@ -8,7 +8,7 @@
 // // => [2, 4]
 
 
-export default function setIntersection(setA, setB) {
+let setIntersection = (setA, setB) => {
   if ( !Array.isArray(setA) || !Array.isArray(setB) ) {
     throw new Error('Invalid input format. Expected two arrays')
   }
@@ -30,3 +30,5 @@ export default function setIntersection(setA, setB) {
   let filteredArr = complementArray.filter(isDuplicate)
   return filteredArr.sort()
 }
+
+module.exports = { setIntersection }

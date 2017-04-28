@@ -13,20 +13,20 @@
 // isPalindrome('A man, a plan, a canal: Panama')
 // // => true
 
-export default function isPalindrome(string) {
-  var strToLowerCase = string.toLowerCase()
-  var cleanStr = strToLowerCase.replace(/[^a-zA-Z]/g, '')
-  var isPalindromeArray = cleanStr.split('')
+let isPalindrome = string => {
+  let strToLowerCase = string.toLowerCase()
+  let cleanStr = strToLowerCase.replace(/[^a-zA-Z]/g, '')
+  let isPalindromeArray = cleanStr.split('')
 
-  var shiftArray = []
-  var popArray = []
+  let shiftArray = []
+  let popArray = []
 
-  for (var i = 0; i < isPalindromeArray.length; i++) {
+  for (let i = 0; i < isPalindromeArray.length; i++) {
     shiftArray.push(isPalindromeArray.shift([i]))
     popArray.push(isPalindromeArray.pop([i]))
   }
-  var shiftString = shiftArray.join('')
-  var popString = popArray.join('')
+  let shiftString = shiftArray.join('')
+  let popString = popArray.join('')
 
   if (shiftString == popString) {
     return true
@@ -34,3 +34,5 @@ export default function isPalindrome(string) {
     return false
   }
 }
+
+module.exports = { isPalindrome }

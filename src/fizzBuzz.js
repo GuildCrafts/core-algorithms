@@ -9,9 +9,9 @@
 // fizzBuzz()
 // // => [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz', ...]
 
-export default function fizzBuzz() {
+let fizzBuzz = () => {
   let fizzBuzzArray = []
-  for (var i = 1; i <= 100; i++){
+  for (let i = 1; i <= 100; i++){
     if (i % 3 == 0 && i % 5 == 0) {
       fizzBuzzArray.push('FizzBuzz')
     } else if (i % 3 == 0) {
@@ -24,3 +24,5 @@ export default function fizzBuzz() {
   }
   return fizzBuzzArray
 }
+
+module.exports = { fizzBuzz }

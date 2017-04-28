@@ -5,16 +5,16 @@
 // fibonacci(10)
 // // => [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 
-export default function fibonacci(num) {
+let fibonacci = num => {
   if (typeof num !== 'number') {
     throw new Error('Invalid input format. Expected a number')
   }
-  var first = 0
-  var second = 1
-  var result
-  var fibonacciArr = [0]
+  let first = 0
+  let second = 1
+  let result
+  let fibonacciArr = [0]
 
-  for (var i = 1; i < num; i++) {
+  for (let i = 1; i < num; i++) {
     result = first + second
     first = second
     second = result
@@ -22,3 +22,5 @@ export default function fibonacci(num) {
   }
   return fibonacciArr
 }
+
+module.exports = { fibonacci }

@@ -8,7 +8,7 @@
 // // => [1, 3, 6, 8]
 
 
-export default function setSymmetricDifference(setA, setB) {
+let setSymmetricDifference = (setA, setB) => {
   if ( !Array.isArray(setA) || !Array.isArray(setB) ) {
     throw new Error('Invalid input format. Expected two arrays')
   }
@@ -27,4 +27,4 @@ export default function setSymmetricDifference(setA, setB) {
   return complementArray.sort()
 }
 
-//
+module.exports = { setSymmetricDifference }
