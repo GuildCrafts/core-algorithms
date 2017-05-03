@@ -8,7 +8,7 @@ Modified to include only sorting, searching, graphing, and geometry algorithms.
 
 ## Installation and Setup
 
-_Fill this out_
+
 
 ## Usage and Examples
 
