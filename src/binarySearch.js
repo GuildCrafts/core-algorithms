@@ -87,7 +87,7 @@ var binarySearch = function(toFind, ascendingArray) {
       }
       /*
         Otherwise, i.e. if the last element of the active subarray is smaller than the
-        number:
+        number or is not comparable with the number:
       */
       else {
         // Return a failure result.
@@ -96,7 +96,7 @@ var binarySearch = function(toFind, ascendingArray) {
     }
     /*
       Otherwise, i.e. if the first element of the active subarray is greater than the
-      number:
+      number or is not comparable with the number:
     */
     else {
       // Return a failure result.

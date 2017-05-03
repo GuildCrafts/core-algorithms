@@ -67,4 +67,9 @@ describe('binarySearch()', function(){
     expect(index).to.be.undefined
   })
 
+  it('returns undefined when searching [-44, 11.1, 30, 99.99, 100.0, "202"] for 100', function(){
+    const index = binarySearch(100, [-44, 11.1, 30, 99.99, 100.0, "202"])
+    expect(index).to.be.equal(4)
+  })
+
 })
