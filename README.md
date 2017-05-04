@@ -13,9 +13,11 @@ Modified to include only sorting, searching, graphing, and geometry algorithms.
 1. Clone this repository into a local directory.
 
 2. In the local directory, install required dependencies (see package.json) by executing:
+
     npm i
 
 3. In the local directory, perform the provided tests by executing:
+
     npm test
 
 ## Usage and Examples
@@ -32,46 +34,78 @@ The output of “npm test” should be:
 
 
   binarySearch()
-    ✓ should be a function 
-    ✓ returns 4 when searching [-44, 11.1, 30, 99.99, 100.0, 202] for 100 
-    ✓ returns undefined when searching [-44, 11.1, 30, 99.99, 100.0, 202] for 99.9 
-    ✓ returns 0 when searching [100, 202] for 100 
-    ✓ returns 1 when searching [100, 202] for 202 
-    ✓ returns 1 when searching [100, 202] for 202.0 
-    ✓ returns 0 when searching [100.0, 202] for 100 
-    ✓ returns undefined when searching [100, 202] for 99 
-    ✓ returns 0 when searching [-1] for -1 
-    ✓ returns undefined when searching [-1] for 1 
-    ✓ returns undefined when searching [] for 0 
-    ✓ returns undefined when searching [5, 4, 3, 2] for 0 
-    ✓ returns undefined when searching [5, 4, 3, 2] for 4 
-    ✓ returns undefined when searching [-44, 11.1, 30, 99.99, 100.0, "202"] for 100 
+
+    ✓ should be a function
+
+    ✓ returns 4 when searching [-44, 11.1, 30, 99.99, 100.0, 202] for 100
+
+    ✓ returns undefined when searching [-44, 11.1, 30, 99.99, 100.0, 202] for 99.9
+
+    ✓ returns 0 when searching [100, 202] for 100
+
+    ✓ returns 1 when searching [100, 202] for 202
+
+    ✓ returns 1 when searching [100, 202] for 202.0
+
+    ✓ returns 0 when searching [100.0, 202] for 100
+
+    ✓ returns undefined when searching [100, 202] for 99
+
+    ✓ returns 0 when searching [-1] for -1
+
+    ✓ returns undefined when searching [-1] for 1
+
+    ✓ returns undefined when searching [] for 0
+
+    ✓ returns undefined when searching [5, 4, 3, 2] for 0
+
+    ✓ returns undefined when searching [5, 4, 3, 2] for 4
+
+    ✓ returns undefined when searching [-44, 11.1, 30, 99.99, 100.0, "202"] for 100
 
   bubbleSort()
-    ✓ should be a function 
-    ✓ returns [1, 4, 10, 10, 28.76] when sorting [4, 10, 1, 28.76, 10] 
-    ✓ returns [1, 4, 10, 28.76] when sorting [1, 4.0, 10, 28.76] 
-    ✓ returns undefined when sorting [4, 10, "1", 28.76, 10] 
+
+    ✓ should be a function
+
+    ✓ returns [1, 4, 10, 10, 28.76] when sorting [4, 10, 1, 28.76, 10]
+
+    ✓ returns [1, 4, 10, 28.76] when sorting [1, 4.0, 10, 28.76]
+
+    ✓ returns undefined when sorting [4, 10, "1", 28.76, 10]
 
   closestPair()
-    ✓ should be a function 
-    ✓ returns [[4, 0], [5, 0]] when analyzing [[4, 0], [5, 0], [5, 2]] 
-    ✓ returns [[4, 0], [5, 0]] when analyzing [[4, 0], [5, 0], [5, 2.6]] 
-    ✓ returns [[5, 0], [4, 0]] when analyzing [[5, 0], [4, 0], [5, 2]] 
-    ✓ returns [[5, 0], [4, 0]] when analyzing [[5, 0], [4, 0]] 
-    ✓ returns [[5, 6.5], [5, 6.5]] when analyzing [[5, 6.5], [5, 6.5]] 
-    ✓ returns [[5, 6.5], [5, 6.5]] when analyzing [[5, 6.5], [5, 6.5], [5, 6.5]] 
-    ✓ returns undefined when analyzing [[5, 0]] 
-    ✓ returns undefined when analyzing [[5, 0], [6, 7, 8]] 
-    ✓ returns undefined when analyzing [[5, 0], 6, 7]] 
-    ✓ returns undefined when analyzing [[5, 0], [6, "7"]] 
+
+    ✓ should be a function
+
+    ✓ returns [[4, 0], [5, 0]] when analyzing [[4, 0], [5, 0], [5, 2]]
+
+    ✓ returns [[4, 0], [5, 0]] when analyzing [[4, 0], [5, 0], [5, 2.6]]
+
+    ✓ returns [[5, 0], [4, 0]] when analyzing [[5, 0], [4, 0], [5, 2]]
+
+    ✓ returns [[5, 0], [4, 0]] when analyzing [[5, 0], [4, 0]]
+
+    ✓ returns [[5, 6.5], [5, 6.5]] when analyzing [[5, 6.5], [5, 6.5]]
+
+    ✓ returns [[5, 6.5], [5, 6.5]] when analyzing [[5, 6.5], [5, 6.5], [5, 6.5]]
+
+    ✓ returns undefined when analyzing [[5, 0]]
+
+    ✓ returns undefined when analyzing [[5, 0], [6, 7, 8]]
+
+    ✓ returns undefined when analyzing [[5, 0], 6, 7]]
+
+    ✓ returns undefined when analyzing [[5, 0], [6, "7"]]
 
   mergeSort()
-    ✓ should be a function 
-    ✓ returns [1, 4, 10, 10, 28.76] when sorting [4, 10, 1, 28.76, 10] 
-    ✓ returns [1, 4, 10, 28.76] when sorting [1, 4.0, 10, 28.76] 
-    ✓ returns undefined when sorting [4, 10, "1", 28.76, 10] 
 
+    ✓ should be a function
+
+    ✓ returns [1, 4, 10, 10, 28.76] when sorting [4, 10, 1, 28.76, 10]
+
+    ✓ returns [1, 4, 10, 28.76] when sorting [1, 4.0, 10, 28.76]
+
+    ✓ returns undefined when sorting [4, 10, "1", 28.76, 10]
 
   33 passing (20ms)
 
