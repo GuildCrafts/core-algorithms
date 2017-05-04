@@ -1,9 +1,9 @@
 /*
-  Define a function to perform a uniform binary search for a specified number in an array
-  of number elements sorted in non-descending order and to return the index of some
-  instance of the number in the array, or undefined if the array contains no instance of
-  the number. The function’s return value is not guaranteed when any precondition is
-  violated.
+  Define a function to perform a uniform binary search for a specified number
+  in an array of number elements sorted in non-descending order and to return
+  the index of some instance of the number in the array, or undefined if the
+  array contains no instance of the number. The function’s return value is
+  not guaranteed when any precondition is violated.
 
   Preconditions:
     0. toFind is a number.
@@ -89,8 +89,8 @@ var binarySearch = function(toFind, ascendingArray) {
           }
         }
         /*
-          Otherwise, i.e. if the last element of the active subarray is smaller than the
-          number or is not comparable with the number:
+          Otherwise, i.e. if the last element of the active subarray is smaller
+          than the number or is not comparable with the number:
         */
         else {
           // Return a failure result.
@@ -98,15 +98,18 @@ var binarySearch = function(toFind, ascendingArray) {
         }
       }
       /*
-        Otherwise, i.e. if the first element of the active subarray is greater than the
-        number or is not comparable with the number:
+        Otherwise, i.e. if the first element of the active subarray is greater
+        than the number or is not comparable with the number:
       */
       else {
         // Return a failure result.
         return undefined;
       }
     }
-    // The array does not contain an instance of the number. Return a failure result.
+    /*
+      The array does not contain an instance of the number. Return a failure
+      result.
+    */
     return undefined;
   }
 };

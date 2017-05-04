@@ -8,8 +8,12 @@ Modified to include only sorting, searching, graphing, and geometry algorithms.
 
 ## Installation and Setup
 
+1. Clone this repository into a local directory.
 
+2. In the local directory, execute:
+    npm i
+    npm test
 
 ## Usage and Examples
 
-_...and this_
+You can add tests to any of the files in the “test” directory and execute “npm test” again.
