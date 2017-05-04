@@ -12,5 +12,8 @@
   },
   "scripts": {
     "test": "mocha --compilers js:babel-register"
+  },
+  "dependencies": {
+    "eslint": "^3.19.0"
   }
 }

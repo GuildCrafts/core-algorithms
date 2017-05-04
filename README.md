@@ -31,83 +31,61 @@ The output of “npm test” should be:
 > core-algorithms@0.0.0 test «path/to/local/directory»
 > mocha --compilers js:babel-register
 
+    binarySearch()
+      ✓ should be a function
+      ✓ returns 4 when searching [-44, 11.1, 30, 99.99, 100.0, 202] for 100
+      ✓ returns undefined when searching [-44, 11.1, 30, 99.99, 100.0, 202] for 99.9
+      ✓ returns 0 when searching [100, 202] for 100
+      ✓ returns 1 when searching [100, 202] for 202
+      ✓ returns 1 when searching [100, 202] for 202.0
+      ✓ returns 0 when searching [100.0, 202] for 100
+      ✓ returns undefined when searching [100, 202] for 99
+      ✓ returns 0 when searching [-1] for -1
+      ✓ returns undefined when searching [-1] for 1
+      ✓ returns undefined when searching [] for 0
+      ✓ returns undefined when searching [5, 4, 3, 2] for 0
+      ✓ returns undefined when searching [5, 4, 3, 2] for 4
+      ✓ returns undefined when searching [-44, 11.1, 30, 99.99, 100.0, "202"] for 100
 
+    bubbleSort()
+      ✓ should be a function
+      ✓ returns [1, 4, 10, 10, 28.76] when sorting [4, 10, 1, 28.76, 10]
+      ✓ returns [1, 4, 10, 28.76] when sorting [1, 4.0, 10, 28.76]
+      ✓ returns undefined when sorting [4, 10, "1", 28.76, 10]
 
-  binarySearch()
+    closestPair()
+      ✓ should be a function
+      ✓ returns [[4, 0], [5, 0]] when analyzing [[4, 0], [5, 0], [5, 2]]
+      ✓ returns [[4, 0], [5, 0]] when analyzing [[4, 0], [5, 0], [5, 2.6]]
+      ✓ returns [[5, 0], [4, 0]] when analyzing [[5, 0], [4, 0], [5, 2]]
+      ✓ returns [[5, 0], [4, 0]] when analyzing [[5, 0], [4, 0]]
+      ✓ returns [[5, 6.5], [5, 6.5]] when analyzing [[5, 6.5], [5, 6.5]]
+      ✓ returns [[5, 6.5], [5, 6.5]] when analyzing [[5, 6.5], [5, 6.5], [5, 6.5]]
+      ✓ returns undefined when analyzing [[5, 0]]
+      ✓ returns undefined when analyzing [[5, 0], [6, 7, 8]]
+      ✓ returns undefined when analyzing [[5, 0], 6, 7]]
+      ✓ returns undefined when analyzing [[5, 0], [6, "7"]]
 
-    ✓ should be a function
+    isConnectedGraph()
+      ✓ should be a function
+      ✓ returns true when analyzing {}
+      ✓ returns true when analyzing {"a": []}
+      ✓ returns true when analyzing {"a": ["b"], "b": ["a"]}
+      ✓ returns false when analyzing {"a": [], "b": []}
+      ✓ returns false when analyzing {"a": ["b"], "b": ["a"], "c": []}
+      ✓ returns true when analyzing {"a": ["b"], "b": ["a", "c"], "c": ["b"]}
+      ✓ returns true when analyzing {"a": ["b", "c"], "b": ["a", "c"], "c": ["a", "b"]}
+      ✓ returns undefined when analyzing {"a": ["b", "c"], "b": ["a", "c", "d"], "c": ["a", "b"]}
+      ✓ returns undefined when analyzing {"a": ["b", "c"], "b": ["a", "b", "c"], "c": ["a", "b"]}
+      ✓ returns undefined when analyzing {"a": ["b", "c"], "b": "nothing", "c": ["a", "b"]}
 
-    ✓ returns 4 when searching [-44, 11.1, 30, 99.99, 100.0, 202] for 100
+    mergeSort()
+      ✓ should be a function
+      ✓ returns [1, 4, 10, 10, 28.76] when sorting [4, 10, 1, 28.76, 10]
+      ✓ returns [1, 4, 10, 28.76] when sorting [1, 4.0, 10, 28.76]
+      ✓ returns undefined when sorting [4, 10, "1", 28.76, 10]
 
-    ✓ returns undefined when searching [-44, 11.1, 30, 99.99, 100.0, 202] for 99.9
-
-    ✓ returns 0 when searching [100, 202] for 100
-
-    ✓ returns 1 when searching [100, 202] for 202
-
-    ✓ returns 1 when searching [100, 202] for 202.0
-
-    ✓ returns 0 when searching [100.0, 202] for 100
-
-    ✓ returns undefined when searching [100, 202] for 99
-
-    ✓ returns 0 when searching [-1] for -1
-
-    ✓ returns undefined when searching [-1] for 1
-
-    ✓ returns undefined when searching [] for 0
-
-    ✓ returns undefined when searching [5, 4, 3, 2] for 0
-
-    ✓ returns undefined when searching [5, 4, 3, 2] for 4
-
-    ✓ returns undefined when searching [-44, 11.1, 30, 99.99, 100.0, "202"] for 100
-
-  bubbleSort()
-
-    ✓ should be a function
-
-    ✓ returns [1, 4, 10, 10, 28.76] when sorting [4, 10, 1, 28.76, 10]
-
-    ✓ returns [1, 4, 10, 28.76] when sorting [1, 4.0, 10, 28.76]
-
-    ✓ returns undefined when sorting [4, 10, "1", 28.76, 10]
-
-  closestPair()
-
-    ✓ should be a function
-
-    ✓ returns [[4, 0], [5, 0]] when analyzing [[4, 0], [5, 0], [5, 2]]
-
-    ✓ returns [[4, 0], [5, 0]] when analyzing [[4, 0], [5, 0], [5, 2.6]]
-
-    ✓ returns [[5, 0], [4, 0]] when analyzing [[5, 0], [4, 0], [5, 2]]
-
-    ✓ returns [[5, 0], [4, 0]] when analyzing [[5, 0], [4, 0]]
-
-    ✓ returns [[5, 6.5], [5, 6.5]] when analyzing [[5, 6.5], [5, 6.5]]
-
-    ✓ returns [[5, 6.5], [5, 6.5]] when analyzing [[5, 6.5], [5, 6.5], [5, 6.5]]
-
-    ✓ returns undefined when analyzing [[5, 0]]
-
-    ✓ returns undefined when analyzing [[5, 0], [6, 7, 8]]
-
-    ✓ returns undefined when analyzing [[5, 0], 6, 7]]
-
-    ✓ returns undefined when analyzing [[5, 0], [6, "7"]]
-
-  mergeSort()
-
-    ✓ should be a function
-
-    ✓ returns [1, 4, 10, 10, 28.76] when sorting [4, 10, 1, 28.76, 10]
-
-    ✓ returns [1, 4, 10, 28.76] when sorting [1, 4.0, 10, 28.76]
-
-    ✓ returns undefined when sorting [4, 10, "1", 28.76, 10]
-
-  33 passing (20ms)
+    44 passing (18ms)
 
 =====================================
 
