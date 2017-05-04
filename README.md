@@ -28,8 +28,8 @@ The output of “npm test” should be:
 
 =====================================
 
-> core-algorithms@0.0.0 test «path/to/local/directory»
-> mocha --compilers js:babel-register
+    > core-algorithms@0.0.0 test «path/to/local/directory»
+    > mocha --compilers js:babel-register
 
     binarySearch()
       ✓ should be a function
