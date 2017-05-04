@@ -35,7 +35,7 @@ var sortedMerge = function(arr0, arr1) {
       // Otherwise:
       else {
         // Move the latter to the end of the result.
-        result.push(arr1.shift())
+        result.push(arr1.shift());
       }
     }
   }
@@ -79,7 +79,7 @@ var mergeSort = function(numArray) {
   // Until all required passes have been completed:
   while (passesDone < passNeed) {
     // Identify the input subarray size of the current pass.
-    iSize = 2 ** passesDone;
+    iSize = Math.pow(2, passesDone);
     // Identify the count of the current pass’s required merges.
     mergeNeed = Math.ceil(numArray.length / iSize / 2);
     // Initialize the count of merges done as 0.

@@ -4,7 +4,7 @@ var isNumPair = function(numPair) {
   // Return whether the argument is a 2-element array of numbers.
   return numPair.length === 2 &&
   typeof(numPair[0]) === "number" &&
-  typeof(numPair[1]) === "number"
+  typeof(numPair[1]) === "number";
 };
 
 // Define a function to validate an array of arrays of 2 numbers.
@@ -33,7 +33,7 @@ var isNumPairArray = function(numPairArray) {
     // Return false.
     return false;
   }
-}
+};
 
 /*
   Define a function to return the distance between 2 specified points.
@@ -43,8 +43,10 @@ var isNumPairArray = function(numPairArray) {
 */
 
 var distance2D = function(point0, point1) {
-  return Math.sqrt((point0[0] - point1[0]) ** 2 + (point0[1] - point1[1]) ** 2);
-}
+  return Math.sqrt(
+    Math.pow(point0[0] - point1[0], 2) + Math.pow(point0[1] - point1[1], 2)
+  );
+};
 
 /*
   Define a function to return the pair of points drawn from a specified array
