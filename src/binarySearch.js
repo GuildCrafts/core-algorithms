@@ -61,4 +61,4 @@ var binarySearch = function(toFind, ascendingArray) {
   }
 };
 
-export default binarySearchB;
+export default binarySearch;
