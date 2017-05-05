@@ -14,7 +14,7 @@ setComplement(a, b)
 // => [6, 8]
 
 
-  set.complement = function(a, b) {
+  set.complement = (a, b) => {
     return process(a, b, function(freq) {
       return freq === 1;
     });

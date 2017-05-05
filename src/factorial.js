@@ -12,7 +12,7 @@ factorial(5)
 
 
 
-factorial (x) =>
+factorial (x) => {
        if(x === 0) {
            return 1;
        }

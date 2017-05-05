@@ -13,7 +13,7 @@ setIntersection(a, b)
 
 
 
-setIntersection () =>
+setIntersection () => {
 let  arr = [1, 2, 3, 4]
 let b = [2, 4, 6, 8]
 setIntersection(a, b)

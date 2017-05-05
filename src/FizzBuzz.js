@@ -12,7 +12,7 @@ fizzBuzz()
 // => [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz', ...]
 
 
-fizzBuzz (arr) =>
+fizzBuzz (arr) => {
 for(const i = 0; i < arr.length; i ++) {
   if(n % 3 === 0) {
     console.log ("Fizz")

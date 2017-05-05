@@ -14,7 +14,7 @@ collatzConjecture(1)
 collatzConjecture(7)
 // => [7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1]
 
-collatzConjecture (n) =>
+collatzConjecture (n) => {
 
   const seq = 0
   while ( i > 1){
