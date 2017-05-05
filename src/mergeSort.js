@@ -1,11 +1,11 @@
 /*
-  Define a function to empty any 2 ascendingly sorted arrays, merging them
-  into 1 ascendingly sorted array and returning the latter. The function’s
-  return value and the resulting contents of the input arrays are not
-  guaranteed when any precondition is violated.
+  Define a function to empty any 2 nondescendingly sorted arrays of numbers,
+  merging them into 1 nondscendingly sorted array and returning the latter.
+  The function’s return value and the resulting contents of the input arrays
+  are not guaranteed when any precondition is violated.
 
   Preconditions:
-    0. arr0 and arr1 are ascendingly sorted arrays of numbers.
+    0. arr0 and arr1 are nondescendingly sorted arrays of numbers.
 */
 var sortedMerge = function(arr0, arr1) {
   // Initialize the result as an empty array.
@@ -44,8 +44,8 @@ var sortedMerge = function(arr0, arr1) {
 };
 
 /*
-  Define a function to use merge sorting to return an array that is an
-  ascendingly sorted copy of a specified array of numbers. The function’s
+  Define a function to use merge sorting to return an array that is a
+  nondescendingly sorted copy of a specified array of numbers. The function’s
   return value is not guaranteed when any precondition is violated.
 
   Preconditions:
@@ -95,7 +95,7 @@ var mergeSort = function(numArray) {
           numArray.slice(elementsMerged, elementsMerged + iSize),
           numArray.slice(elementsMerged + iSize, elementsMerged + 2 * iSize)
         );
-        // Replace the merged elements with its elements.
+        // Replace the merged elements with the elements of the result.
         numArray.splice(elementsMerged, iSize * 2, ...mergedArray);
         // Increment the count of the pass’s completed merges.
         mergesDone++;
