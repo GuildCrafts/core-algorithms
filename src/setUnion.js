@@ -3,12 +3,12 @@ export default function setUnion {()} {
 
 
 
-  Return the union of two sets.
+  /*Return the union of two sets.
 
   const a = [1, 2, 3, 4]
   const b = [2, 4, 6, 8]
   setUnion(a, b)
-  // => [1, 2, 3, 4, 6, 8]
+  // => [1, 2, 3, 4, 6, 8]*/
 
 setUnion (arr) => //could be a quicksort algorithm
 

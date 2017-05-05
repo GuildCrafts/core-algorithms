@@ -9,7 +9,7 @@ it('should be a function()', function() {
 })
 
 it('returns true when isPalindrome = palindrome', function(){
-  const Pali = isPalindrome({price: 100, amountGiven: 100})
+  const Pali = isPalindrome(})
   expect(change).to.be.an('object')
   })
 })

@@ -1,13 +1,13 @@
 export default function factorial {()} {
 
 
-Factorial = the product of an integer and all the integers below it; e.g., factorial four ( 4! ) is equal to 24.
+/*Factorial = the product of an integer and all the integers below it; e.g., factorial four ( 4! ) is equal to 24.
 
 
 
-Return the factorial of a number.
+Return the factorial of a number.*/
 
-factorial(5)
+//factorial(5)
 // => 120
 
 

@@ -5,9 +5,7 @@ export default function fibonnaci({}){
 
 
 
-Fibonacci
 
-Return an array of Fibonacci numbers to the nth position.
 
 fibonacci(10)
 // => [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]

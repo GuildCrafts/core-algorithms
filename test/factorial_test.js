@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import fizzBuzz from '../src/factorial_test'
+import factorial from '../src/factorial'
 
 
 
@@ -13,8 +13,8 @@ describe('factorial_test()', function(){
 })
 
 
-it('returns a factorial )', function(){
-  const change = factorial({return 1, if 0})
+it('returns a factorial', function(){
+  const change = factorial({})
 })
 
 

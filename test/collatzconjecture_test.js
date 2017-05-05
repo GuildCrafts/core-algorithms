@@ -1,25 +1,19 @@
 import { expect } from 'chai'
-import collatzConjecture from '../src/collatzConjecture_test'
+import collatzconjecture from '../src/collatzconjecture'
 
 
 
 
-expect ('collatzConjecture_test()', function () {
+//expect ('collatzConjecture_test()', function () {
 
-  describe('factorial_test()', function(){
+  describe.only('collatzconjecture_test()', function() {
 
     it('should be a function', function(){
-      expect.factorial_test.to.be.a('function')
+      expect.collatzconjecture.to.be.a('function')
   })
 
 
-describe('factorial_test()'{
-  expect.factorial_test.to.be.a('function')
-})
-
-
-it('If n is even, divide it by 2 ', function(){
-  const Pali = isPalindrome({price: 100, amountGiven: 100})
-  expect(change).to.be.an('object')
-  })
+//describe('collatzConjecture_test()'{
+//  expect.factorial_test.to.be.a('function')
+//
 })

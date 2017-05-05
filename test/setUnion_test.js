@@ -5,7 +5,4 @@ describe('setUnion', function () {
 
   it('should be a function'() {
     expect((setUnion).to.be.a('function'){
-
-
-it('should return ')
-  expect(())
+}
