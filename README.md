@@ -6,6 +6,19 @@ Base repository for the [Core Algorithms](http://jsdev.learnersguild.org/goals/1
 
 Modified to include only sorting, searching, graphing, and geometry algorithms.
 
+Algorithms included are:
+
+```
+binarySearchA
+binarySearchB
+bubbleSort
+closestPair
+isConnectedGraph
+mergeSort
+```
+
+The binarySearchB implementation is intended to be more parsimonious and, for large arrays, more efficient than binarySearchA but otherwise to produce identical results.
+
 ## Installation and Setup
 
 0. These instructions presuppose that npm (https://nodejs.org/en/) is installed.
@@ -32,7 +45,23 @@ The output of “npm test” should be:
 > core-algorithms@0.0.0 test «path/to/local/directory»
 > mocha --compilers js:babel-register
 
-binarySearch()
+binarySearchA()
+  ✓ should be a function
+  ✓ returns 4 when searching [-44, 11.1, 30, 99.99, 100.0, 202] for 100
+  ✓ returns undefined when searching [-44, 11.1, 30, 99.99, 100.0, 202] for 99.9
+  ✓ returns 0 when searching [100, 202] for 100
+  ✓ returns 1 when searching [100, 202] for 202
+  ✓ returns 1 when searching [100, 202] for 202.0
+  ✓ returns 0 when searching [100.0, 202] for 100
+  ✓ returns undefined when searching [100, 202] for 99
+  ✓ returns 0 when searching [-1] for -1
+  ✓ returns undefined when searching [-1] for 1
+  ✓ returns undefined when searching [] for 0
+  ✓ returns undefined when searching [5, 4, 3, 2] for 0
+  ✓ returns undefined when searching [5, 4, 3, 2] for 4
+  ✓ returns undefined when searching [-44, 11.1, 30, 99.99, 100.0, "202"] for 100
+
+binarySearchB()
   ✓ should be a function
   ✓ returns 4 when searching [-44, 11.1, 30, 99.99, 100.0, 202] for 100
   ✓ returns undefined when searching [-44, 11.1, 30, 99.99, 100.0, 202] for 99.9
@@ -52,7 +81,10 @@ bubbleSort()
   ✓ should be a function
   ✓ returns [1, 4, 10, 10, 28.76] when sorting [4, 10, 1, 28.76, 10]
   ✓ returns [1, 4, 10, 28.76] when sorting [1, 4.0, 10, 28.76]
+  ✓ returns [1] when sorting [1]
+  ✓ returns [] when sorting []
   ✓ returns undefined when sorting [4, 10, "1", 28.76, 10]
+  ✓ returns undefined when sorting "not an array"
 
 closestPair()
   ✓ should be a function
@@ -84,9 +116,12 @@ mergeSort()
   ✓ should be a function
   ✓ returns [1, 4, 10, 10, 28.76] when sorting [4, 10, 1, 28.76, 10]
   ✓ returns [1, 4, 10, 28.76] when sorting [1, 4.0, 10, 28.76]
+  ✓ returns [1] when sorting [1]
+  ✓ returns [] when sorting []
   ✓ returns undefined when sorting [4, 10, "1", 28.76, 10]
+  ✓ returns undefined when sorting "not an array"
 
-44 passing (18ms)
+64 passing (23ms)
 ```
 
 =====================================
