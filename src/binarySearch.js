@@ -17,13 +17,8 @@ var binarySearch = function(toFind, ascendingArray) {
     var arrLength = ascendingArray.length;
     // Initialize the start, midpoint, and end of the unignorable subarray.
     var indexes = [0, Math.floor(arrLength / 2), arrLength - 1];
-    // Initialize the result as a failure.
-    var result = undefined;
-    var temp = 0;
     // As long as any subarray is unignorable:
     while (indexes[0] <= indexes[2]) {
-      temp++;
-      if (temp > 7) {return "stopped"}
       // If its midpoint element is the number:
       if (ascendingArray[indexes[1]] === toFind) {
         // Return its index.
