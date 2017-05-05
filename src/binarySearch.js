@@ -10,7 +10,7 @@
     1. ascendingArray is an array of 0 or more numbers in non-descending order,
       possibly containing duplicates.
 */
-var binarySearchB = function(toFind, ascendingArray) {
+var binarySearch = function(toFind, ascendingArray) {
   // If the arguments are valid:
   if (typeof(toFind) === "number" && Array.isArray(ascendingArray)) {
     // Identify the length of the array.
