@@ -12,5 +12,6 @@
   },
   "scripts": {
     "test": "mocha --compilers js:babel-register"
-  }
+  },
+  "dependencies": {}
 }
