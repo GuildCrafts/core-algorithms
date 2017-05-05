@@ -10,7 +10,7 @@
     1. ascendingArray is an array of 0 or more numbers in non-descending order,
       possibly containing duplicates.
 */
-var binarySearch = function(toFind, ascendingArray) {
+var binarySearchA = function(toFind, ascendingArray) {
   // Initialize the start and end indexes of the active subarray as the array’s.
   var startIndex = 0;
   var endIndex = ascendingArray.length - 1;
@@ -114,4 +114,4 @@ var binarySearch = function(toFind, ascendingArray) {
   }
 };
 
-export default binarySearch;
+export default binarySearchA;
