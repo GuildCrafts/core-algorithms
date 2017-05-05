@@ -53,56 +53,64 @@ var sortedMerge = function(arr0, arr1) {
       duplicates.
 */
 var mergeSort = function(numArray) {
-  /*
-    If any element of the input array is other than a number, return a
-    failure result.
-  */
-  for (var i = 0; i < numArray.length; i++) {
-    if (typeof(numArray[i]) !== "number") {
-      return undefined;
+  // If the argument is an array:
+  if (Array.isArray(numArray)) {
+    /*
+      If any element of the input array is other than a number, return a
+      failure result.
+    */
+    for (var i = 0; i < numArray.length; i++) {
+      if (typeof(numArray[i]) !== "number") {
+        return undefined;
+      }
     }
-  }
-  // Identify the count of required passes.
-  var passNeed = Math.ceil(Math.log2(numArray.length));
-  // Initialize the count of completed passes as 0.
-  var passesDone = 0;
-  // Declare the size of an input array.
-  var iSize;
-  // Declare the count of a pass’s required merges.
-  var mergeNeed;
-  // Declare the count of a pass’s completed merges.
-  var mergesDone;
-  // Declare the count of a pass’s merged elements.
-  var elementsMerged;
-  // Declare the result of a merge.
-  var mergedArray;
-  // Until all required passes have been completed:
-  while (passesDone < passNeed) {
-    // Identify the input subarray size of the current pass.
-    iSize = Math.pow(2, passesDone);
-    // Identify the count of the current pass’s required merges.
-    mergeNeed = Math.ceil(numArray.length / iSize / 2);
-    // Initialize the count of merges done as 0.
-    mergesDone = 0;
-    // Until all merges of the current pass have been performed:
-    while (mergesDone < mergeNeed) {
-      // Identify the count of the current pass’s merged elements.
-      elementsMerged = mergesDone * iSize * 2;
-      // Identify the result of the next merge.
-      mergedArray = sortedMerge(
-        numArray.slice(elementsMerged, elementsMerged + iSize),
-        numArray.slice(elementsMerged + iSize, elementsMerged + 2 * iSize)
-      );
-      // Replace the merged elements with its elements.
-      numArray.splice(elementsMerged, iSize * 2, ...mergedArray);
-      // Increment the count of the pass’s completed merges.
-      mergesDone++;
+    // Identify the count of required passes.
+    var passNeed = Math.ceil(Math.log2(numArray.length));
+    // Initialize the count of completed passes as 0.
+    var passesDone = 0;
+    // Declare the size of an input array.
+    var iSize;
+    // Declare the count of a pass’s required merges.
+    var mergeNeed;
+    // Declare the count of a pass’s completed merges.
+    var mergesDone;
+    // Declare the count of a pass’s merged elements.
+    var elementsMerged;
+    // Declare the result of a merge.
+    var mergedArray;
+    // Until all required passes have been completed:
+    while (passesDone < passNeed) {
+      // Identify the input subarray size of the current pass.
+      iSize = Math.pow(2, passesDone);
+      // Identify the count of the current pass’s required merges.
+      mergeNeed = Math.ceil(numArray.length / iSize / 2);
+      // Initialize the count of merges done as 0.
+      mergesDone = 0;
+      // Until all merges of the current pass have been performed:
+      while (mergesDone < mergeNeed) {
+        // Identify the count of the current pass’s merged elements.
+        elementsMerged = mergesDone * iSize * 2;
+        // Identify the result of the next merge.
+        mergedArray = sortedMerge(
+          numArray.slice(elementsMerged, elementsMerged + iSize),
+          numArray.slice(elementsMerged + iSize, elementsMerged + 2 * iSize)
+        );
+        // Replace the merged elements with its elements.
+        numArray.splice(elementsMerged, iSize * 2, ...mergedArray);
+        // Increment the count of the pass’s completed merges.
+        mergesDone++;
+      }
+      // Increment the count of completed passes.
+      passesDone++;
     }
-    // Increment the count of completed passes.
-    passesDone++;
+    // Return the sorted array.
+    return numArray;
   }
-  // Return the sorted array.
-  return numArray;
+  // Otherwise, i.e. if the argument is not an array:
+  else {
+    // Return a failure result.
+    return undefined;
+  }
 };
 
 export default mergeSort;
