@@ -3,6 +3,10 @@
   let changeNeeded = amountGiven - price,
       coinChange = {quarters: 0, dimes: 0, nickels: 0, pennies: 0}
 
+  if (amountGiven < price) {
+    return 'Gimme more money!'
+  }
+
   while (changeNeeded >= 25) {
     coinChange.quarters++
     changeNeeded -= 25
