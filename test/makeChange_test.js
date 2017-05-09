@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import makeChange from '../src/makeChange'
 
-describe('makeChange()', function(){
+describe.only('makeChange()', function(){
 
   it('should be a function', function(){
     expect(makeChange).to.be.a('function')
@@ -49,5 +49,7 @@ describe('makeChange()', function(){
       nickels: 0,
       pennies: 0,
     })
+
+    expect(makeChange({price: 100, amountGiven: 99})).to.deep.equal('Gimme more money!')
   })
 })
