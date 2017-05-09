@@ -9,5 +9,6 @@ describe.only('factorial()', function(){
 
   it('returns an array of numbers 1-100, fizz for multiples of 3, buzz for multiples of 5, fizzbuzz for multiples of 3 and five', function(){
     expect(factorial(5)).to.deep.equal(120)
-  }) 
+    expect(factorial(10)).to.deep.equal(3628800)
+  })
 })
