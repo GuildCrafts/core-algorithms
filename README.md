@@ -1,3 +1,43 @@
+# Installation and Setup
+
+Installing your dependencies from the package.json file using ```npm install```
+
+## Usage and Examples
+
+### Factorial
+
+Returns factorial of number passed in
+
+```
+let multiplyNumbers = []
+
+for (let i = input; i > 1; i--) {
+	multiplyNumbers.push(i)
+}
+return multiplyNumbers.reduce(function(a, b) {return a * b})
+}
+```
+
+### Factorial Testing
+
+```
+import { expect } from 'chai'
+import factorial from '../src/factorial'
+
+describe.only('factorial()', function(){
+
+  it('should be a function', function(){
+    expect(factorial).to.be.a('function')
+  })
+
+  it('returns factorial of number passed in', function(){
+    expect(factorial(5)).to.deep.equal(120)
+    expect(factorial(10)).to.deep.equal(3628800)
+  })
+})
+```
+
+
 # Core Algorithms [Classic, Numeric, Set]
 
 - [x] Artifact produced is a fork of the [core-algorithms][core-algorithms] repo.
@@ -29,12 +69,3 @@
 - [x]  Variables, functions, files, etc. have appropriate and meaningful names.
 - [x]  Functions are small and serve a single purpose.
 - [x]  The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
-
-
-## Installation and Setup
-
-_Fill this out_
-
-## Usage and Examples
-
-_...and this_
