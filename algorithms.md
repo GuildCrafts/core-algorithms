@@ -134,13 +134,12 @@ setSymmetricDifference(a, b)
 // => [1, 3, 6, 8]
 ```
 
-
 ## Sorting and Searching
 
 #### binarySearch
 
 Search for a number within an array using the **binary search** algorithm.
-[Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm) looks for an item in a list by looking at a list's center, then looking at the center of the left or right half, continually dividing the search space in half until it finds what it's looking for.
+**[Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)** looks for an item in a list by looking at a list's center, then looking at the center of the left or right half, continually dividing the search space in half until it finds what it's looking for.
 
 ```javascript
 const numbers = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
@@ -150,7 +149,7 @@ binarySearch(numbers, 45)
 
 #### bubbleSort
 
-Sort an array of numbers using the **bubble sort** algorithm.
+Sort an array of numbers using the **[bubble sort](https://en.wikipedia.org/wiki/Bubble_sort)** algorithm.
 
 ```javascript
 bubbleSort([10, 2, 7, 5, 8, 3, 6, 1, 4, 9])
@@ -159,7 +158,7 @@ bubbleSort([10, 2, 7, 5, 8, 3, 6, 1, 4, 9])
 
 #### mergeSort
 
-Sort an array of numbers using the **merge sort** algorithm.
+Sort an array of numbers using the **[merge sort](https://en.wikipedia.org/wiki/Merge_sort)** algorithm.
 
 ```javascript
 mergeSort([10, 2, 7, 5, 8, 3, 6, 1, 4, 9])
@@ -219,3 +218,4 @@ const graphB = {
 isConnectedGraph(graphB)
 // => false
 ```
+

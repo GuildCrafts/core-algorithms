@@ -11,6 +11,11 @@
     "mocha": "2.0.1"
   },
   "scripts": {
+    "lint": "eslint src/*.js",
     "test": "mocha --compilers js:babel-register"
+  },
+  "dependencies": {
+    "eslint": "^3.19.0",
+    "standard": "^10.0.2"
   }
 }
