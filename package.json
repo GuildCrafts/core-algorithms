@@ -8,9 +8,19 @@
     "babel-preset-env": "^1.1.4",
     "babel-register": "^6.18.0",
     "chai": "~1.8.0",
-    "mocha": "2.0.1"
+    "mocha": "2.0.1",
+    "eslint-plugin-import": "^2.2.0"
   },
   "scripts": {
-    "test": "mocha --compilers js:babel-register"
+    "build": "babel src -d lib",
+    "test": "mocha --compilers js:babel-register ./spec/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/leikkisa/core-algorithms.git"
+  },
+  "licenses": {
+    "type": "MIT",
+    "url": "https://github.com/leikkisa/core-algorithms/raw/master/LICENSE"
   }
 }
