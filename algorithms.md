@@ -6,7 +6,7 @@
 
 #### makeChange
 
-Given a price and an amount paid, return the number of coins in each denomination that should be given as change.
+Given a price and an amount paid in $US, return the number of coins in each denomination that should be given as change, if the seller is required to minimize the total number of coins comprising the change. Use a source, such as the (United States Mint)[https://www.usmint.gov/circulating-coins-production?program=Circulating+Coins], to determine which denominations of coins are in circulation. As shown in the examples, all denominations must be included in the returned object, even when the count of coins of a denomination is 0. There is no constraint on the order of the entries in a returned object.
 
 _Note: because JavaScript is [bad at decimal math](http://adripofjavascript.com/blog/drips/avoiding-problems-with-decimal-math-in-javascript.html), the inputs are given as integers that represent dollar + cent amounts, so `139` = $1.39._
 
