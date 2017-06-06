@@ -61,7 +61,7 @@ Return the factorial of a number.
 factorial(5)
 // => 120
 ```
-
+fac
 #### fibonacci
 
 Return an array of Fibonacci numbers to the _nth_ position.
